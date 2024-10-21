@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Change Calculator</h1>
+        <p>Enter amount and select the currencies to convert:</p>
+        <div class="calculator">
+            <input type="number" id="amount" placeholder="Enter amount" />
+            <br>
+            <label for="from-currency">From:</label>
+            <select id="from-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="PKR">PKR</option>
+            </select>
+            <br>
+
+            <label for="to-currency">To:</label>
+            <select id="to-currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+                <option value="PKR">PKR</option>
+            </select>
+            <br>
+
+            <button onclick="convertCurrency()">Convert</button>
+
+            <div id="result"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
